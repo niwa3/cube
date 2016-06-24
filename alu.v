@@ -50,7 +50,7 @@ always @(*) begin
 			out <= in0;
 			zf <= 0;
 		end
-		R_90:begin //90度回転
+		R_90:begin //90度回転方向は自分で指定
 			if(in0==8'b00000000)begin
 				out <= {in1[7:2],(in1[1:0]==2'b10)?in1[1:0]:(in1[1:0]~^2'b00)};
 			end else if(in0==8'b00000001)begin
