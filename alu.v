@@ -24,7 +24,7 @@ always @(*) begin
 			out <= (in0>in1) ? in0 - in1 : in1 - in0;
 			zf <= 0;
 		end
-		INC : begin  //インクリメントする
+		INC : begin //インクリメントする
 			out <= in0 + 1;
 			zf <= 0;
 		end
@@ -46,7 +46,7 @@ always @(*) begin
 			out <= in0;
 			zf <= 0;
 		end
-		LI : begin　//レジスタに入力した値を保存
+		LI : begin //レジスタに入力した値を保存
 			out <= in0;
 			zf <= 0;
 		end
